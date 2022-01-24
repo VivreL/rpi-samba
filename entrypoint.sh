@@ -24,10 +24,10 @@ while [ $# -gt 0 ]
 			group_id=$1 ;;
 		"-u")
 			shift ;
-			users+=$1 ;;
+			users+=($1) ;;
 		"-s")
 			shift ;
-			shares+=$1 ;;
+			shares+=($1) ;;
 		esac
 		shift
 	done
